@@ -1,0 +1,6 @@
+{
+  "output_strategy": "console",
+  "input_file": "data/inspections.csv",
+  "output_file": "data/output.txt",
+  "limit": 1000
+}
