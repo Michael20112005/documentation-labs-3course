@@ -1,0 +1,23 @@
+<h1>Edit Patient</h1>
+
+<form method="post">
+    <p>
+        <label>Name:</label><br>
+        <input type="text" name="name" value="{{ patient.name }}" required>
+    </p>
+
+    <p>
+        <label>Phone:</label><br>
+        <input type="text" name="phone" value="{{ patient.phone }}" required>
+    </p>
+
+    <p>
+        <label>Birth Date:</label><br>
+        <input type="text" name="birth_date" value="{{ patient.birth_date }}" required>
+    </p>
+
+    <button type="submit">Update</button>
+</form>
+
+<br>
+<a href="/">Back</a>
