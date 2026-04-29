@@ -1,0 +1,26 @@
+<h1>Patients</h1>
+
+<a href="/create">Add Patient</a>
+
+<table border="1" cellpadding="8" cellspacing="0">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Phone</th>
+        <th>Birth Date</th>
+        <th>Actions</th>
+    </tr>
+
+    {% for p in patients %}
+    <tr>
+        <td>{{ p.id }}</td>
+        <td>{{ p.name }}</td>
+        <td>{{ p.phone }}</td>
+        <td>{{ p.birth_date }}</td>
+        <td>
+            <a href="/edit/{{ p.id }}">Edit</a>
+            <a href="/delete/{{ p.id }}">Delete</a>
+        </td>
+    </tr>
+    {% endfor %}
+</table>
